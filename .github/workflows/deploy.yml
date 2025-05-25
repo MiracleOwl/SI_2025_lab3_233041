@@ -22,7 +22,7 @@ jobs:
       - name: Lint HTML
         run: htmlhint index.html
 
-  build-htmls:
+  docker-build:
     runs-on: ubuntu-latest
     needs: lint-html
     if: github.ref_name == 'master'
